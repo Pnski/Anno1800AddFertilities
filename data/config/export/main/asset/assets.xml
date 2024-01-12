@@ -19,7 +19,7 @@
           </TriggerCondition>
           <TriggerActions>
             <Item>
-              <Action>
+              <TriggerAction>
                 <Template>ActionExecuteScript</Template>
                 <Values>
                   <Action />
@@ -27,7 +27,7 @@
                     <ScriptFileName>data/scripts/fertilities.lua</ScriptFileName>
                   </ActionExecuteScript>
                 </Values>
-              </Action>
+              </TriggerAction>
             </Item>
             <Item>
               <TriggerAction>
