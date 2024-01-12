@@ -44,4 +44,49 @@
       </Values>
     </Asset>
   </ModOp>
+  <ModOp GUID="130216" Type="addNextSibling">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1600019998</GUID>
+          <Name>Trigger Reinitialize Script</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionEvent</Template>
+            <Values>
+              <Condition />
+              <ConditionEvent>
+                <ConditionEvent>SessionLeave</ConditionEvent>
+              </ConditionEvent>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <Action>
+                <Template>ActionExecuteScript</Template>
+                <Values>
+                  <Action />
+                  <ActionExecuteScript>
+                    <ScriptFileName>data/scripts/defertilities.lua</ScriptFileName>
+                  </ActionExecuteScript>
+                </Values>
+              </Action>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionResetTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionResetTrigger />
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
 </ModOps>
